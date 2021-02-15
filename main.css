@@ -1,0 +1,198 @@
+body {
+  background-color: #292929;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+a {
+  color: white;
+  font-family: "Open Sans Condensed";
+  margin: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #33333328;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(172, 172, 172, 0.144);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#HeroHolder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 75%;
+  background-image: url("./HeroBanner.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#292929)), url("./HeroBanner.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #292929), url("./HeroBanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#HeroBanner {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+#HeroTitle {
+  font-size: 10vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  -webkit-animation: 1s ease-out 0s 1 slideIn;
+          animation: 1s ease-out 0s 1 slideIn;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translate(-50%, -300%);
+            transform: translate(-50%, -300%);
+    color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+    color: white;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translate(-50%, -300%);
+            transform: translate(-50%, -300%);
+    color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+    color: white;
+  }
+}
+
+.section {
+  position: absolute;
+  min-height: 200px;
+  width: 100%;
+  background-color: #252525;
+  top: 80%;
+  left: 0px;
+}
+
+.sectionModCol {
+  background-color: #292929;
+}
+
+.textDesc {
+  position: absolute;
+  left: 20%;
+  width: 70%;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.textDesc1 {
+  position: absolute;
+  left: 0%;
+  width: 70%;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+#section2 {
+  top: calc(80% + 200px);
+}
+
+#Devs {
+  top: calc(80% + 400px);
+}
+
+#DevsCentered {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.centeredX {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translate(50%, 0%);
+          transform: translate(50%, 0%);
+}
+
+.logo {
+  height: 40px;
+}
+
+.dev {
+  position: relative;
+  width: 100%;
+  top: 0px;
+}
+
+.DevPics {
+  width: 100%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.nametag {
+  padding: 0%;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  -webkit-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
+}
+
+#devContainer {
+  position: absolute;
+  top: calc(2em + 40px);
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  list-style: none;
+  width: 20%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+#devContainer > li {
+  display: inline-block;
+  width: 50%;
+}
+/*# sourceMappingURL=main.css.map */

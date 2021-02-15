@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bug Report Forum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />-->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="reports.css" />
+  </head>
+  <body>
+    <form
+      action="https://formspree.io/f/xnqoypne"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <table>
+        <li>
+          <label>
+            Describe The Issue / What lead up to the issue / How to recreate
+            it:<br />
+            <textarea name="The Bug"></textarea>
+          </label>
+        </li>
+        <li>
+          <label id="finddebugLog">
+            Debug Log (if game crashed this can be found at
+            ../users/user/appdata/roaming/theorbetorian):<br />
+            <textarea name="The Bug" id="bugReportArea"></textarea>
+          </label>
+        </li>
+      </table>
+
+      <!-- your other form fields go here -->
+
+      <button type="submit" id="submit">Send</button>
+    </form>
+  </body>
+  <script src="autoreportScript.js"></script>
+</html>
