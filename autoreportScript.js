@@ -2,8 +2,15 @@
 
 if (document.URL.split("#").length > 1) {
   let url = document.URL.split("#");
+
   url[0] = "";
+  document.getElementById("version").value = parseURL(url[1].split("/")[0]);
+
+  url = url[1].split("/");
+  url[0] = "";
+  url.join("/");
   let errMsg = url.join("#").substr(1, 10000000);
+
   console.log(errMsg);
   document.getElementById(
     "finddebugLog"
