@@ -8,7 +8,7 @@ if (document.URL.split("#").length > 1) {
   document.getElementById(
     "finddebugLog"
   ).innerHTML = `Debug Log (This has been autofilled in, no need to touch it)
-    <textarea name="The Bug" id="bugReportArea"></textarea>
+    <textarea name="The Crash Log" id="bugReportArea"></textarea>
     `;
   document.getElementById("bugReportArea").value = parseURL(errMsg);
 
