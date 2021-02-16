@@ -7,7 +7,7 @@
     <link rel="shortcut icon" id="Icon" href="./Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
       rel="stylesheet"
@@ -15,28 +15,33 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    />-->
     <script src="main.js"></script>
   </head>
   <body>
     <div id="HeroHolder">
       <!--<img src="./HeroBanner.png" id="HeroBanner" />-->
       <h1 id="HeroTitle">The Obetorian</h1>
+      <button
+        id="downloadButton"
+        onclick="alert('No Public build is out yet.... Check back Soon!')"
+      >
+        Download
+      </button>
     </div>
 
     <!--Start of sections-->
     <div id="about" class="section">
       <p class="textDesc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        eveniet sapiente voluptatibus necessitatibus, nihil temporibus laborum
-        delectus modi eos asperiores animi officiis commodi beatae quasi ab ut!
-        Dolor, laboriosam totam. Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Beatae, eveniet! Delectus vero sit ex aspernatur quasi
-        soluta? Tempore exercitationem perferendis dolorum earum fuga natus
-        necessitatibus consequatur, soluta, saepe sit fugit? Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Vitae, voluptates culpa ipsum,
-        animi pariatur quo quos eius magnam impedit facere unde atque, molestiae
-        molestias quae reprehenderit expedita in inventore numquam.
+        The Orbetorian is a game about mining, crafting, and exploring. However
+        this is unlike any sandbox game you have ever played! This is a survival
+        sandbox game with just about an infiniate amount of possibilities, each
+        time you play it will be a unique experiance because each world, galaxy,
+        mob, and even item are all procedurally generated. The textures, uses,
+        and more are all unique to that block, its a one of a kind, all the
+        blocks, mobs, items, and plants follow this same logic. I'm sure the
+        builders here are happy to hear there are blocks of just about every
+        color with many textures.
       </p>
     </div>
 
@@ -57,7 +62,12 @@
 
     <div id="Devs" class="section">
       <div class="DevsCentered">
-        <h1 class="centeredX">The Devs:</h1>
+        <h1
+          class="centeredX"
+          onclick="this.style.transform = `rotate(${Math.random() * 360}deg)`"
+        >
+          The Devs:
+        </h1>
         <img src="./Logo.png" class="logo" />
         <ul id="devContainer">
           <li>
