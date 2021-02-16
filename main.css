@@ -64,8 +64,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -100%);
-          transform: translate(-50%, -100%);
+  -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
   -webkit-animation: 1s ease-out 0s 1 slideIn;
           animation: 1s ease-out 0s 1 slideIn;
 }
@@ -152,6 +152,20 @@ a {
 
 .logo {
   height: 40px;
+}
+
+#downloadButton {
+  color: white;
+  font-size: 2vw;
+  font-family: "Open Sans Condensed";
+  background-color: #018f20;
+  border-radius: 0px;
+  border-color: transparent;
+  position: absolute;
+  right: 50%;
+  top: calc(50% + 5vw);
+  -webkit-transform: translate(50%, 0%);
+          transform: translate(50%, 0%);
 }
 
 .dev {
