@@ -1,7 +1,7 @@
 //TODO change the path directory to whatever OS they are on
 
 if (document.URL.split("#").length > 1) {
-  let url = document.URL.split("#");
+  let url = replaceAll(document.URL.split("#"), "&spl", "#");
 
   url[0] = "";
 
