@@ -61,13 +61,13 @@ a {
 }
 
 #HeroTitle {
-  font-size: 10vw;
+  font-size: 8vw;
 
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -90%);
   animation: 1s ease-out 0s 1 slideIn;
 }
 
@@ -104,6 +104,16 @@ a {
   transform: translate(0%, -50%);
 }
 
+#aboutTitle {
+  position: absolute;
+  left: 0%;
+  margin: 20px;
+  width: 70%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  color: white;
+}
+
 .textDesc1 {
   position: absolute;
   left: 0%;
@@ -134,6 +144,21 @@ a {
 
 .logo {
   height: 40px;
+}
+
+#downloadButton {
+  color: white;
+  font-size: 2vw;
+  font-family: "Open Sans Condensed";
+
+  background-color: rgb(1, 143, 32);
+  border-radius: 0px;
+  border-color: transparent;
+
+  position: absolute;
+  right: 50%;
+  top: calc(50% + 5vw);
+  transform: translate(50%, 0%);
 }
 
 //Dev Icon Thing

@@ -118,6 +118,17 @@ a {
           transform: translate(0%, -50%);
 }
 
+#aboutTitle {
+  position: absolute;
+  left: 0%;
+  margin: 20px;
+  width: 70%;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  color: white;
+}
+
 .textDesc1 {
   position: absolute;
   left: 0%;
