@@ -30,6 +30,8 @@ function parseURL(input) {
   parsed = replaceAll(parsed, "&NL", "\n");
   parsed = replaceAll(parsed, "&DT", ".");
   parsed = replaceAll(parsed, "%23", "#");
+  parsed = replaceAll(parsed, "%3A", ":");
+  parsed = replaceAll(parsed, "%22", `"`);
 
   return parsed;
 }
