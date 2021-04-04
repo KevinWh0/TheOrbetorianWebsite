@@ -24,7 +24,11 @@ if (document.URL.split("#").length > 1) {
 
 function parseURL(input) {
   let parsed = input;
+  parsed = decodeURI(parsed);
+
   parsed = replaceAll(parsed, "%20", " ");
+  parsed = replaceAll(parsed, "%2520", " ");
+
   parsed = replaceAll(parsed, "\\+", " ");
   parsed = replaceAll(parsed, "%2F", "/");
   parsed = replaceAll(parsed, "%5C", "\\");
@@ -42,8 +46,6 @@ function parseURL(input) {
   parsed = replaceAll(parsed, "%3F", `?`);
   parsed = replaceAll(parsed, "%2C", `,`);
   parsed = replaceAll(parsed, "%3B", `;`);
-
-  parsed = decodeURI(parsed);
 
   return parsed;
 }
